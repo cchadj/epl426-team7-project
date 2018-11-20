@@ -114,8 +114,6 @@ public class SplineComponent : MonoBehaviour, ISpline
 
     public Vector3 GetNonUniformPoint(float t)
     {
-        Vector3 a = new Vector3();
-
         switch (points.Count)
         {
             case 0:
