@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.28462112, g: 0.37120938, b: 0.49880487, a: 1}
+  m_IndirectSpecularColor: {r: 0.28462148, g: 0.37121013, b: 0.49880773, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -190,7 +190,7 @@ GameObject:
   - component: {fileID: 549662124}
   - component: {fileID: 549662123}
   - component: {fileID: 549662122}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -379,8 +379,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25bb06e0301e9f6418f3645952ab0391, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpImpulseForce: 10
-  doubleJumpDiscount: 0
+  jumpImpulseForce: 8
+  doubleJumpDiscount: 0.3
   downwardsGravity: 0
 --- !u!1 &1124390669
 GameObject:

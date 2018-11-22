@@ -10,34 +10,48 @@ public class Jump : MonoBehaviour
     private Rigidbody _rb;
     public float jumpImpulseForce;
 
-    [Range(0f, 1f)]
-    public float doubleJumpDiscount;
-    [Range(0f, 1f)]
-    public float downwardsGravity;
+
+
 
     private float _prevHeight;
     private int jumpCount = 0;
+    private int _groundLayerMask = 0;
+
+    public float  fallMultiplier = 2.5f;
+    public float lowJumpMultiplier = 2f;
+
+    [Range(0f, 1f)]
+    public float doubleJumpDiscount;
     void Awake()
     {
         _transform = GetComponent<Transform>();
         _rb = GetComponent<Rigidbody>();
+        _groundLayerMask = LayerMask.NameToLayer("Ground");
     }
 
     void Update()
     {
+        if (_rb.velocity.y < 0)
+        {
+            _rb.velocity += Vector3.up * Physics.gravity.y * (fallMultiplier - 1f) * Time.deltaTime;
+        }
+        else if (_rb.velocity.y > 0)
+        {
+            _rb.velocity += Vector3.up * Physics.gravity.y * (lowJumpMultiplier - 1f) * Time.deltaTime;
+        }
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("hey force is " + jumpImpulseForce);
             float curHeight = _transform.position.y;
 
-            _rb.AddForce(Vector3.up * jumpImpulseForce, ForceMode.Impulse);
-            /*
+
             if (jumpCount == 0)
             {
                 _rb.AddForce(Vector3.up * jumpImpulseForce, ForceMode.Impulse);
                 jumpCount++;
             }
-            else if(jumpCount == 1)
+            else if (jumpCount == 1)
             {
                 _rb.AddForce(Vector3.up * jumpImpulseForce * 0.5f, ForceMode.Impulse);
                 jumpCount++;
@@ -46,16 +60,22 @@ public class Jump : MonoBehaviour
             {
                 return;
             }
-            */
 
-            if (Mathf.Approximately(_prevHeight, curHeight))
-            {
-                //_rb.AddForce(Vector3.down * jumpImpulseForce * downwardsGravity, ForceMode.Impulse);
-            }
             _prevHeight = curHeight;
 
         }
 
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.gameObject.layer == _groundLayerMask)
+        {
+            ResetJumpCounter();
+        }        
+    }
+    private void ResetJumpCounter()
+    {
+        jumpCount = 0;
+    }
 }
