@@ -6,6 +6,7 @@ public class SplinePathFollower : MonoBehaviour
 {
     private Transform m_transform;
     private float _horizontalInput = 0f;
+
     private float _speed = 0f;
     private float _progress = 0f;
     
@@ -24,13 +25,14 @@ public class SplinePathFollower : MonoBehaviour
     void GetInput()
     {
         _horizontalInput = Input.GetAxis("Horizontal");
-        _horizontalInput = Time.deltaTime * _horizontalInput * discountFactor;
     }
+
     // Update is called once per frame
     void Update()
     {
         GetInput();
-        _progress += _horizontalInput;
+
+        _progress += Time.deltaTime * _horizontalInput * discountFactor;
         _progress = Mathf.Clamp01(_progress);
         Vector3 curTransformPosition = m_transform.position;
         Vector3 splinePointPosition = spline.GetPoint(_progress);
@@ -39,6 +41,17 @@ public class SplinePathFollower : MonoBehaviour
         _targetY = Mathf.Clamp(_targetY, splinePointPosition.y, Mathf.Infinity);
         Vector3 desiredPosition = new Vector3(splinePointPosition.x, 0f, splinePointPosition.z);
         transform.position = desiredPosition;
-        transform.forward = desiredDirection;
+
+        if (_horizontalInput < 0f)
+        {
+            transform.forward = -desiredDirection;
+        }
+        else if (_horizontalInput > 0f)
+        {
+            transform.forward = desiredDirection;
+        }
+        
+
+
     }
 }

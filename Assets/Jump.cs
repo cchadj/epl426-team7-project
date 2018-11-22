@@ -53,7 +53,7 @@ public class Jump : MonoBehaviour
             }
             else if (jumpCount == 1)
             {
-                _rb.AddForce(Vector3.up * jumpImpulseForce * 0.5f, ForceMode.Impulse);
+                _rb.AddForce(Vector3.up * jumpImpulseForce * doubleJumpDiscount, ForceMode.Impulse);
                 jumpCount++;
             }
             else
