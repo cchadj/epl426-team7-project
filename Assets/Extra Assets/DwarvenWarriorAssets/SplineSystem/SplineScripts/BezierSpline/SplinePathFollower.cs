@@ -15,7 +15,7 @@ public class SplinePathFollower : MonoBehaviour
     private float _targetY = 0f;
 
     public Transform childTransform;
-    void Awake()
+    void Start()
     {
         _transform = GetComponent<Transform>();
         Vector3 position = spline.GetTangentAlongSplineAtDistance(_t);
