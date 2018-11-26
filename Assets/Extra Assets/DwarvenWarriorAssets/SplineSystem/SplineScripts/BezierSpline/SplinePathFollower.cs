@@ -11,16 +11,17 @@ public class SplinePathFollower : MonoBehaviour
     private float _t = 0f;
     
     public Spline spline;
-    public float discountFactor = 1f;
+    public float speed = 1f;
     private float _targetY = 0f;
 
     public Transform childTransform;
+    private CharacterController _childCharacterController;
     void Start()
     {
         _transform = GetComponent<Transform>();
-        Vector3 position = spline.GetTangentAlongSplineAtDistance(_t);
-        
-        transform.localPosition = position;
+        _childCharacterController = childTransform.gameObject.GetComponent<CharacterController>();
+
+        _transform.position = spline.GetLocationAlongSplineAtDistance(_t) + Vector3.up * _transform.lossyScale.y;
     }
 
     void GetInput()
@@ -28,16 +29,16 @@ public class SplinePathFollower : MonoBehaviour
         _horizontalInput = Input.GetAxis("Horizontal");
     }
 
+    // Update is called once per frame
     private void Update()
     {
         GetInput();
-    }
-    // Update is called once per frame
-    private void FixedUpdate()
-    {
-        GetInput();
         
-        _t += Time.deltaTime * _horizontalInput * discountFactor;
+        if ((_childCharacterController.collisionFlags & CollisionFlags.Sides) != 0)
+            Debug.Log("Does this activate");
+        
+
+        _t += Time.deltaTime * _horizontalInput * speed;
         _t = Mathf.Clamp(_t, 0f, spline.Length);
         Vector3 curTransformPosition = _transform.position;
         Vector3 splinePointPosition = spline.GetLocationAlongSplineAtDistance(_t);
@@ -51,14 +52,14 @@ public class SplinePathFollower : MonoBehaviour
         
         if (_horizontalInput < 0f)
         {
-            transform.forward = -desiredDirection;
+            _transform.forward = -desiredDirection;
         }
         else if (_horizontalInput > 0f)
         {
-            transform.forward = desiredDirection;
+            _transform.forward = desiredDirection;
         }
-        
 
+        _transform.position = desiredPosition;
 
     }
 }

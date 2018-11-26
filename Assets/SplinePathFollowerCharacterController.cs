@@ -26,7 +26,7 @@ public class SplinePathFollowerCharacterController : MonoBehaviour {
         _transform = GetComponent<Transform>();
         _characterController = GetComponent<CharacterController>();
 
-        transform.position = spline.GetTangentAlongSplineAtDistance(0f) + Vector3.up * _transform.lossyScale.y;
+        transform.position = spline.GetLocationAlongSpline(0f) + Vector3.up * _transform.lossyScale.y;
     }
 
     void GetInput()
@@ -34,13 +34,24 @@ public class SplinePathFollowerCharacterController : MonoBehaviour {
         _horizontalInput = Input.GetAxis("Horizontal");
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         GetInput();
         Vector3 lastPosition = _transform.position;
         bool movedRight = false;
+        CollisionFlags collisionFlags = _characterController.collisionFlags;
         Debug.Log("Distance covered " + _distanceCovered);
 
+
+        //// collision flags explained https://docs.unity3d.com/ScriptReference/CollisionFlags.html
+        //if ((_characterController.collisionFlags & CollisionFlags.Sides) != 0)
+        //{
+        //    _characterController.SimpleMove(Vector3.zero);
+        //    return;
+        //}
+
+        if (_characterController.isGrounded)
+        {
 
             _distanceCovered = Mathf.Clamp(_distanceCovered, 0, spline.Length);
 
@@ -62,14 +73,19 @@ public class SplinePathFollowerCharacterController : MonoBehaviour {
             // We are grounded, so recalculate
             // move direction directly from axes
             _moveDirection = transform.TransformDirection(_moveDirection);
-           
-           if(_characterController.isGrounded)
+
+
             _moveDirection = _moveDirection * speedMagnitude;
+
+
+
             if (Input.GetButton("Jump") && _characterController.isGrounded)
             {
                 _moveDirection.y = jumpSpeed;
             }
-        
+
+        }
+
 
         // Apply gravity
         _moveDirection.y = _moveDirection.y - (gravity * Time.deltaTime);
@@ -77,8 +93,19 @@ public class SplinePathFollowerCharacterController : MonoBehaviour {
         // Move the controller
         _characterController.Move(_moveDirection * Time.deltaTime);
 
+        //if (_moveDirection != Vector3.zero)
+        //    transform.forward = _moveDirection.normalized;
+
         float distance = Vector3.Distance(_transform.position, lastPosition);
         _distanceCovered += movedRight? distance : -distance;
 
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.name == "YourWallName")  // or if(gameObject.CompareTag("YourWallTag"))
+        {
+            
+        }
     }
 }
