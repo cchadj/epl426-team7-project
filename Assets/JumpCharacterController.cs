@@ -17,7 +17,7 @@ public class JumpCharacterController : MonoBehaviour {
 
     private int _maxJumpCount = 2;
     private int _jumpCount = 0;
-    void FixedUpdate()
+    void Update()
     {
         if (_characterController.isGrounded)
         {
