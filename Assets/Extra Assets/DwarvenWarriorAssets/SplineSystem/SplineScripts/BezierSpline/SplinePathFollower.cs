@@ -16,11 +16,12 @@ public class SplinePathFollower : MonoBehaviour
 
     public Transform childTransform;
     private CharacterController _childCharacterController;
+    public CollisionController childCollisionController;
     void Start()
     {
         _transform = GetComponent<Transform>();
         _childCharacterController = childTransform.gameObject.GetComponent<CharacterController>();
-
+        //childCollisionController = childTransform.gameObject.GetComponent<CollisionController>();
         _transform.position = spline.GetLocationAlongSplineAtDistance(_t) + Vector3.up * _transform.lossyScale.y;
     }
 
@@ -33,12 +34,12 @@ public class SplinePathFollower : MonoBehaviour
     private void Update()
     {
         GetInput();
-        
-        if ((_childCharacterController.collisionFlags & CollisionFlags.Sides) != 0)
-            Debug.Log("Does this activate");
-        
 
-        _t += Time.deltaTime * _horizontalInput * speed;
+        if (!childCollisionController.IsTouchingWall)
+            _t += Time.deltaTime * _horizontalInput * speed;
+        else
+            return;
+
         _t = Mathf.Clamp(_t, 0f, spline.Length);
         Vector3 curTransformPosition = _transform.position;
         Vector3 splinePointPosition = spline.GetLocationAlongSplineAtDistance(_t);
