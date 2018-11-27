@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class CollisionController : MonoBehaviour
 {
-
+    private Transform _transform;
     public List<Collider> ignoredColliders;
     private Collider _collider;
-
+    public Vector3 collisionDirection;
 
     void Start()
     {
+        _transform = transform;
         _collider = GetComponent<Collider>();
         foreach (Collider c in ignoredColliders)
         {
@@ -18,7 +19,7 @@ public class CollisionController : MonoBehaviour
         }
     }
 
-    public Vector3 collisionDirection;
+
     [SerializeField]
     private bool _isTouchingWall = false;
     public bool IsTouchingWall
@@ -36,6 +37,7 @@ public class CollisionController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        collisionDirection = other.transform.position - _transform.position;
         _isTouchingWall = true;
     }
 

@@ -34,23 +34,7 @@ public class SplinePathFollower : MonoBehaviour
     private void Update()
     {
         GetInput();
-
-        if (!childCollisionController.IsTouchingWall)
-            _t += Time.deltaTime * _horizontalInput * speed;
-        else
-            return;
-
-        _t = Mathf.Clamp(_t, 0f, spline.Length);
-        Vector3 curTransformPosition = _transform.position;
-        Vector3 splinePointPosition = spline.GetLocationAlongSplineAtDistance(_t);
-
         Vector3 desiredDirection = spline.GetTangentAlongSplineAtDistance(_t);
-
-        _targetY = Mathf.Clamp(_targetY, 0f, Mathf.Infinity);
-        //Vector3 desiredPosition = new Vector3(splinePointPosition.x, _targetY, splinePointPosition.z);
-        Vector3 desiredPosition = splinePointPosition;
-        //transform.localPosition = desiredPosition;
-        
         if (_horizontalInput < 0f)
         {
             _transform.forward = -desiredDirection;
@@ -59,6 +43,29 @@ public class SplinePathFollower : MonoBehaviour
         {
             _transform.forward = desiredDirection;
         }
+        if (!childCollisionController.IsTouchingWall)
+            _t += Time.deltaTime * _horizontalInput * speed;
+        else
+        {
+            if(Vector3.Dot(childCollisionController.collisionDirection, transform.forward) < 0f)
+            {
+                _t += Time.deltaTime * _horizontalInput * speed;
+            }
+            else
+             return;
+        }
+
+        _t = Mathf.Clamp(_t, 0f, spline.Length);
+        Vector3 curTransformPosition = _transform.position;
+        Vector3 splinePointPosition = spline.GetLocationAlongSplineAtDistance(_t);
+
+
+
+        _targetY = Mathf.Clamp(_targetY, 0f, Mathf.Infinity);
+        //Vector3 desiredPosition = new Vector3(splinePointPosition.x, _targetY, splinePointPosition.z);
+        Vector3 desiredPosition = splinePointPosition;
+        //transform.localPosition = desiredPosition;
+
 
         _transform.position = desiredPosition;
 
