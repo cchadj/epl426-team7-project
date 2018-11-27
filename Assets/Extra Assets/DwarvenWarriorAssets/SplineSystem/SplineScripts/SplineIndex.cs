@@ -8,8 +8,13 @@ public class SplineIndex
     SplineComponent spline;
 
 
-    public int ControlPointCount => spline.ControlPointCount;
-
+    public int ControlPointCount
+    {
+        get
+        {
+            return spline.ControlPointCount;
+        }
+    }
 
     public SplineIndex(SplineComponent spline)
     {

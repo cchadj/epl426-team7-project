@@ -66,17 +66,30 @@ public class SplineComponent : MonoBehaviour, ISpline
         return closestPoint;
     }
 
-    public Vector3 GetPoint(float t) => Index.GetPoint(t);
+    public Vector3 GetPoint(float t)
+    {
+        return Index.GetPoint(t);
+    }
 
-    public Vector3 GetControlPoint(int index) => points[index];
+    public Vector3 GetControlPoint(int index)
+    {
+        return points[index];
+    }
 
-    public Vector3 GetLeft(float t) => -GetRight(t);
+    public Vector3 GetLeft(float t)
+    {
+        return -GetRight(t);
+    }
 
-    public Vector3 GetDown(float t) => -GetUp(t);
+    public Vector3 GetDown(float t)
+    {
+        return -GetUp(t);
+    }
 
-    public Vector3 GetBackward(float t) => -GetForward(t);
-
-
+    public Vector3 GetBackward(float t)
+    {
+        return -GetForward(t);
+    }
 
     public Vector3 GetDistance(float distance)
     {
