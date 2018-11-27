@@ -9,8 +9,11 @@ public class SplinePathFollower : MonoBehaviour
 
     private float _speed = 0f;
     private float _t = 0f;
-    
-    public Spline spline;
+
+    public List<Spline> splines;
+    private ITwoWayEnumerator<Spline> _splineEnumerator;
+    private Spline _activeSpline;
+
     public float speed = 1f;
     private float _targetY = 0f;
 
@@ -19,10 +22,13 @@ public class SplinePathFollower : MonoBehaviour
     public CollisionController childCollisionController;
     void Start()
     {
-        _transform = GetComponent<Transform>();
+         _splineEnumerator = splines.GetTwoWayEnumerator();
+         _splineEnumerator.MoveNext();
+        _activeSpline = _splineEnumerator.Current;
+         _transform = GetComponent<Transform>();
         _childCharacterController = childTransform.gameObject.GetComponent<CharacterController>();
         //childCollisionController = childTransform.gameObject.GetComponent<CollisionController>();
-        _transform.position = spline.GetLocationAlongSplineAtDistance(_t) + Vector3.up * _transform.lossyScale.y;
+        _transform.position = _activeSpline.GetLocationAlongSplineAtDistance(_t) + Vector3.up * _transform.lossyScale.y;
     }
 
     void GetInput()
@@ -34,7 +40,8 @@ public class SplinePathFollower : MonoBehaviour
     private void Update()
     {
         GetInput();
-        Vector3 desiredDirection = spline.GetTangentAlongSplineAtDistance(_t);
+        Vector3 desiredDirection = _activeSpline.GetTangentAlongSplineAtDistance(_t);
+
         if (_horizontalInput < 0f)
         {
             _transform.forward = -desiredDirection;
@@ -43,6 +50,7 @@ public class SplinePathFollower : MonoBehaviour
         {
             _transform.forward = desiredDirection;
         }
+
         if (!childCollisionController.IsTouchingWall)
             _t += Time.deltaTime * _horizontalInput * speed;
         else
@@ -55,9 +63,10 @@ public class SplinePathFollower : MonoBehaviour
              return;
         }
 
-        _t = Mathf.Clamp(_t, 0f, spline.Length);
+        _t = Mathf.Clamp(_t, 0f, _activeSpline.Length);
+
         Vector3 curTransformPosition = _transform.position;
-        Vector3 splinePointPosition = spline.GetLocationAlongSplineAtDistance(_t);
+        Vector3 splinePointPosition = _activeSpline.GetLocationAlongSplineAtDistance(_t);
 
 
 
@@ -68,6 +77,21 @@ public class SplinePathFollower : MonoBehaviour
 
 
         _transform.position = desiredPosition;
-
+        if (Mathf.Approximately(_t, _activeSpline.Length))
+        {
+            if (_splineEnumerator.MoveNext())
+            {
+                _activeSpline = _splineEnumerator.Current;
+                _t = 0f;
+            }
+        }
+        else if (Mathf.Approximately(_t, 0f))
+        {
+            if (_splineEnumerator.MovePrevious())
+            {
+                _activeSpline = _splineEnumerator.Current;
+                _t = _activeSpline.Length;
+            }
+        }
     }
 }
