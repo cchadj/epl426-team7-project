@@ -39,10 +39,12 @@ public class CollisionController : MonoBehaviour
     {
         if (other.CompareTag("Collectable"))
         {
-            Debug.Log("Please help me I need help");
+            Debug.Log("Collectable found.");
             return;
         }
-        Debug.Log("HEELP ME ");
+
+        
+        Debug.Log("WALL FOUND CANT WALK");
         collisionDirection = other.transform.position - _transform.position;
         _isTouchingWall = true;
     }
