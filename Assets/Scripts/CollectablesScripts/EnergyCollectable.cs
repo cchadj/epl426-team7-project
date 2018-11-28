@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnergyCollectable : MonoBehaviour, Collectable
+public class EnergyCollectable : MonoBehaviour, ICollectable
 {
     public Animator energyCollectedAnimator;
     public GameEvent onBeingCollectedEvent;

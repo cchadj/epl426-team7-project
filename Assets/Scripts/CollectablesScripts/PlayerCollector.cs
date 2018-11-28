@@ -6,7 +6,7 @@ public class PlayerCollector : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        Collectable c = other.GetComponent<Collectable>();
+        ICollectable c = other.GetComponent<ICollectable>();
         if (c != null)
             c.Collect();
     }
