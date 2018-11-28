@@ -20,8 +20,14 @@ public class SharedStatCounter : ScriptableObject {
 
     [SerializeField]
     private int _energyCollected;
-    public int EnergyCollected;
-    
+    public int EnergyCollected
+    {
+        get
+        {
+            return _energyCollected;
+        }
+    }
+
     [SerializeField]
     private int _maxEnergy;
     public int MaxEnergy
@@ -36,6 +42,8 @@ public class SharedStatCounter : ScriptableObject {
             _maxEnergy = value;
         }
     }
+
+
 
     /// <summary>
     /// Adds one coin to the counter
