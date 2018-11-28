@@ -19,14 +19,34 @@ public class StartDisplay : MonoBehaviour
     private GameObject score;
     private GameObject power;
     private GameObject scoreP;
+    private GameObject barH;
+    private GameObject barP;
+    private GameObject barHM;
+    private GameObject barPM;
     public Vector2 posbarH = new Vector2();
     public Vector2 posbarP = new Vector2();
     public Vector2 sizeBar = new Vector2();
     public Texture progressBarEmpty;
     public Texture progressBarFullH;
     public Texture progressBarFullP;
+
     private float barDisplay;
     private bool con = false;
+
+
+    public void Start()
+    {
+        health = GameObject.Find("/CanvasPlay/Health");
+        score = GameObject.Find("/CanvasPlay/Score");
+        power = GameObject.Find("/CanvasPlay/Power");
+        scoreP = GameObject.Find("/CanvasPlay/ScorePoints");
+        barH = GameObject.Find("/CanvasPlay/HealthBar");
+        barP = GameObject.Find("/CanvasPlay/PowerBar");
+        barHM = GameObject.Find("/CanvasPlay/HealthBarMinus");
+        barPM = GameObject.Find("/CanvasPlay/PowerBarMinus");
+    }
+
+
     public void Intro()
     {
         intro = GameObject.Find("/CameraIntro");
@@ -48,55 +68,33 @@ public class StartDisplay : MonoBehaviour
         intro.GetComponent<CPC_CameraPath>().enabled = true;
         canvasStart.SetActive(false);
         canvasPlay.SetActive(true);
-        health = GameObject.Find("/CanvasPlay/Health");
-        score = GameObject.Find("/CanvasPlay/Score");
-        power = GameObject.Find("/CanvasPlay/Power");
-        scoreP = GameObject.Find("/CanvasPlay/ScorePoints");
+    
+        
         score.GetComponent<Image>().CrossFadeAlpha(0, 0f, false);
         scoreP.GetComponent<Text>().CrossFadeAlpha(0, 0f, false);
         health.GetComponent<Text>().CrossFadeAlpha(0, 0f, false);
         power.GetComponent<Text>().CrossFadeAlpha(0, 0f, false);
+        barH.GetComponent<Image>().CrossFadeAlpha(0, 0f, false);
+        barP.GetComponent<Image>().CrossFadeAlpha(0, 0f, false);
+        barHM.GetComponent<Image>().CrossFadeAlpha(0, 0f, false);
+        barPM.GetComponent<Image>().CrossFadeAlpha(0, 0f, false);
+
         yield return new WaitForSeconds(waitSeconds + 2);
         score.GetComponent<Image>().CrossFadeAlpha(1, 4f, false);
         scoreP.GetComponent<Text>().CrossFadeAlpha(1, 4f, false);
         health.GetComponent<Text>().CrossFadeAlpha(1, 4f, false);
         power.GetComponent<Text>().CrossFadeAlpha(1, 4f, false);
-        con = true;
-        OnGUI();
+        barH.GetComponent<Image>().CrossFadeAlpha(1, 4f, false);
+        barP.GetComponent<Image>().CrossFadeAlpha(1, 4f, false);
+        barPM.GetComponent<Image>().CrossFadeAlpha(1, 4f, false);
+        barHM.GetComponent<Image>().CrossFadeAlpha(1, 4f, false);
 
     }
 
-    void OnGUI()
-    {
-        if (con)
-        {
-            GUI.BeginGroup(new Rect(posbarH.x, posbarH.y, sizeBar.x, sizeBar.y));
-            GUI.Box(new Rect(0, 0, sizeBar.x, sizeBar.y), progressBarEmpty);
-
-            GUI.BeginGroup(new Rect(0, 0, sizeBar.x*barDisplay , sizeBar.y));
-            GUI.Box(new Rect(0, 0, sizeBar.x, sizeBar.y), progressBarFullH);
-            GUI.EndGroup();
-
-            GUI.EndGroup();
-
-            GUI.BeginGroup(new Rect(posbarP.x, posbarP.y, sizeBar.x, sizeBar.y));
-            GUI.Box(new Rect(0, 0, sizeBar.x, sizeBar.y), progressBarEmpty);
-
-            GUI.BeginGroup(new Rect(0, 0, sizeBar.x * barDisplay, sizeBar.y));
-            GUI.Box(new Rect(0, 0, sizeBar.x, sizeBar.y), progressBarFullP);
-            GUI.EndGroup();
-
-            GUI.EndGroup();
-
-
-
-        }
-    }
 
 
     void Update()
     {
-
-        barDisplay = Time.time * 0.07f;
+        barH.GetComponent<RectTransform>().sizeDelta = new Vector2(100-(Time.time*5), 30);
     }
 }
