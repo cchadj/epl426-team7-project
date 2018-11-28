@@ -13,12 +13,14 @@ public class JumpCharacterController : MonoBehaviour {
     private void Start()
     {
         _characterController = GetComponent<CharacterController>();
+        transform.localPosition = Vector3.zero;
     }
 
     private int _maxJumpCount = 2;
     private int _jumpCount = 0;
     void Update()
     {
+
         if (_characterController.isGrounded)
         {
             _jumpCount = 0;
@@ -31,5 +33,6 @@ public class JumpCharacterController : MonoBehaviour {
         }
         moveDirection.y -= gravity * Time.deltaTime;
         _characterController.Move(moveDirection * Time.deltaTime);
+        transform.localPosition = new Vector3(0f, transform.localPosition.y, 0f);  //transform.position - Vector3.forward * transform.position.z - Vector3.right * transform.position.x;
     }
 }
