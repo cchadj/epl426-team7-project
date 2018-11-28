@@ -37,6 +37,12 @@ public class CollisionController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (other.CompareTag("Collectable"))
+        {
+            Debug.Log("Please help me I need help");
+            return;
+        }
+        Debug.Log("HEELP ME ");
         collisionDirection = other.transform.position - _transform.position;
         _isTouchingWall = true;
     }

@@ -8,6 +8,7 @@ public class SplinePathFollower : MonoBehaviour
     private float _horizontalInput = 0f;
 
     private float _speed = 0f;
+    [SerializeField]
     private float _t = 0f;
 
     public List<Spline> splines;
