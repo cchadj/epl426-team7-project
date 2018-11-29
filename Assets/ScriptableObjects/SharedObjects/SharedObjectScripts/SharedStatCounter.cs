@@ -44,6 +44,33 @@ public class SharedStatCounter : ScriptableObject {
     }
 
 
+    [SerializeField]
+    private int _health;
+    /// <summary>
+    /// Health is clamped beteen 0 and MaxHealth
+    /// </summary>
+    public int Health
+    {
+        get
+        {
+            return _health;
+        }
+
+        set
+        { 
+            _health = Mathf.Clamp(value, 0, _maxHealth);
+        }
+    }
+
+    [SerializeField]
+    private int _maxHealth;
+    public int MaxHealth
+    {
+        get
+        {
+            return _maxHealth;
+        }
+    }
 
     /// <summary>
     /// Adds one coin to the counter
@@ -101,5 +128,14 @@ public class SharedStatCounter : ScriptableObject {
     public float GetEnergyPercentage()
     {
         return (float)_energyCollected / MaxEnergy;
+    }
+
+    /// <summary>
+    /// Get the percentage of the energy from 0 to 1 with 1 being MaxHealth and 0 the player is dead.
+    /// </summary>
+    /// <returns></returns>
+    public float GetHealthPercentage()
+    {
+        return (float)_health / MaxHealth;
     }
 }
