@@ -10,6 +10,11 @@ public class SplinePathFollower : MonoBehaviour
     private float _speed = 0f;
     [SerializeField]
     private float _t = 0f;
+    public void set_t(float newt)
+    {
+        _t = newt;
+    }
+
 
     public List<Spline> splines;
     private ITwoWayEnumerator<Spline> _splineEnumerator;
