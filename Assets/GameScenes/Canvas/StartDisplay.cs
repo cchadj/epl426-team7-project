@@ -29,13 +29,13 @@ public class StartDisplay : MonoBehaviour
     public Texture progressBarEmpty;
     public Texture progressBarFullH;
     public Texture progressBarFullP;
-
+    public bool start= false;
     private float barDisplay;
-    private bool con = false;
-
+ 
 
     public void Start()
     {
+        canvasPlay.SetActive(true);
         health = GameObject.Find("/CanvasPlay/Health");
         score = GameObject.Find("/CanvasPlay/Score");
         power = GameObject.Find("/CanvasPlay/Power");
@@ -44,6 +44,8 @@ public class StartDisplay : MonoBehaviour
         barP = GameObject.Find("/CanvasPlay/PowerBar");
         barHM = GameObject.Find("/CanvasPlay/HealthBarMinus");
         barPM = GameObject.Find("/CanvasPlay/PowerBarMinus");
+        canvasPlay.SetActive(false);
+
     }
 
 
@@ -65,9 +67,10 @@ public class StartDisplay : MonoBehaviour
     {
 
         yield return new WaitForSeconds(waitSeconds);
+        canvasPlay.SetActive(true);
         intro.GetComponent<CPC_CameraPath>().enabled = true;
         canvasStart.SetActive(false);
-        canvasPlay.SetActive(true);
+       
     
         
         score.GetComponent<Image>().CrossFadeAlpha(0, 0f, false);
@@ -88,13 +91,14 @@ public class StartDisplay : MonoBehaviour
         barP.GetComponent<Image>().CrossFadeAlpha(1, 4f, false);
         barPM.GetComponent<Image>().CrossFadeAlpha(1, 4f, false);
         barHM.GetComponent<Image>().CrossFadeAlpha(1, 4f, false);
-
+        start = true;
     }
 
 
 
     void Update()
     {
+        if (start)
         barH.GetComponent<RectTransform>().sizeDelta = new Vector2(100-(Time.time*5), 30);
     }
 }
