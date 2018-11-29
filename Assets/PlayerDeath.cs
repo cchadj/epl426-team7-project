@@ -8,10 +8,13 @@ public class PlayerDeath : MonoBehaviour {
     public GameObject effect;
     public GameObject playerParentFixed;
     public GameObject character;
+    public GameObject camera;
+    private CameraSplinePathFollower cameraSplinePaths;
     private SplinePathFollower splinePaths;
     private void Start()
     {
         splinePaths = playerParentFixed.GetComponent<SplinePathFollower>();
+        cameraSplinePaths = camera.GetComponent<CameraSplinePathFollower>();
     }
 
     private Vector3 positionToRespawn = new Vector3(0f, 10f, 0f);
@@ -24,6 +27,9 @@ public class PlayerDeath : MonoBehaviour {
         // Reposition player
         splinePaths.set_t(_tPositionToRespawn);
         character.transform.position = positionToRespawn;
+
+        // Reposition camera
+        cameraSplinePaths.set_t(_tPositionToRespawn);
 
         // Put particles around player
         // GameObject respawn_effect = (GameObject)Instantiate(respawnEffect);
