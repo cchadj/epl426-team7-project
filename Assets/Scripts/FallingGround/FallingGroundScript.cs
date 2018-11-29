@@ -8,7 +8,7 @@ public class FallingGroundScript : MonoBehaviour {
     private bool _alreadyTriggered=false;
     private void OnTriggerEnter(Collider other)
     {
-        if (!_alreadyTriggered){
+        if (!_alreadyTriggered && other.CompareTag("PlayerFeet")){
             Shake();
         }
 
