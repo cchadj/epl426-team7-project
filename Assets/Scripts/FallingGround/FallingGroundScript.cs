@@ -22,6 +22,8 @@ public class FallingGroundScript : MonoBehaviour {
 
     private void Fall()
     {
-      this.gameObject.AddComponent<Rigidbody>();
+        if(!_alreadyTriggered)
+            this.gameObject.AddComponent<Rigidbody>();
+        _alreadyTriggered = true;
     }
 }
