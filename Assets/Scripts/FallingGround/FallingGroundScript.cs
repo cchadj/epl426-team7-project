@@ -22,7 +22,6 @@ public class FallingGroundScript : MonoBehaviour {
 
     private void Fall()
     {
-        Rigidbody gameObjectsRigidBody = this.gameObject.AddComponent<Rigidbody>(); // Add the rigidbody.
-        gameObjectsRigidBody.mass = 5; // Set the GO's mass to 5 via the Rigidbody.
+      this.gameObject.AddComponent<Rigidbody>();
     }
 }
