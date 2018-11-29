@@ -14,7 +14,7 @@ public class MatchColliderMovement : MonoBehaviour {
 	void Start () {
         _rb = GetComponent<Rigidbody>();
         _col = GetComponent<Collider>();
-        _rb.isKinematic = false;
+        _rb.isKinematic = true;
         _rb.interpolation = RigidbodyInterpolation.Interpolate;
 	}
 	
