@@ -17,7 +17,7 @@ public class PlayerDeath : MonoBehaviour {
         cameraSplinePaths = camera.GetComponent<CameraSplinePathFollower>();
     }
 
-    private Vector3 positionToRespawn = new Vector3(0f, 10f, 0f);
+    private Vector3 positionToRespawn = new Vector3(0f, 15f, 0f);
     private float _tPositionToRespawn = 0.01f;
     public void Respawn()
     {

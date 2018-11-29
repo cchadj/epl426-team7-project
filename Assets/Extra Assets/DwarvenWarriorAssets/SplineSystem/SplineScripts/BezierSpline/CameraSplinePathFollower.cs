@@ -79,14 +79,8 @@ public class CameraSplinePathFollower : MonoBehaviour
 
         Vector3 desiredPosition = splinePointPosition;
 
-        // Apply the transform
-        // But first, get the direction.
-        Vector3 direction = character.position - desiredPosition;
-        _transform.LookAt(direction.normalized);
-        //_transform.rotation = Quaternion.Euler(direction);
-        //Vector3 direction_t = new Vector3(direction.x, 0, 0);
-        //_transform.eulerAngles = direction;
-
+        // Apply the transform of the camera
+        _transform.LookAt(character.position);
         _transform.position = desiredPosition;
 
         if (Mathf.Approximately(_t, _activeSpline.Length))
