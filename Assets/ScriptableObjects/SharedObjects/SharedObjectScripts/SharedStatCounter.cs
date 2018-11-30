@@ -5,6 +5,10 @@ public class SharedStatCounter : ScriptableObject {
 
     [SerializeField]
     private GameEvent onHealthChangedEvent;
+    [SerializeField]
+    private GameEvent onCoinsCollectedChangedEvent;
+    [SerializeField]
+    private GameEvent onEnergyChangedEvent;
 
     [SerializeField]
     private int _coinsCollected;
@@ -17,7 +21,10 @@ public class SharedStatCounter : ScriptableObject {
 
         set
         {
+            if (_coinsCollected < 0)
+                _coinsCollected = 0;
             _coinsCollected = value;
+            onCoinsCollectedChangedEvent.Raise();
         }
     }
 
@@ -28,6 +35,12 @@ public class SharedStatCounter : ScriptableObject {
         get
         {
             return _energyCollected;
+        }
+        set
+        {
+            _energyCollected = value;
+            _energyCollected = Mathf.Clamp(_energyCollected, 0, MaxEnergy);
+            onEnergyChangedEvent.Raise();
         }
     }
 
@@ -48,7 +61,7 @@ public class SharedStatCounter : ScriptableObject {
 
 
     [SerializeField]
-    private int _health;
+    private int _health= 100;
     /// <summary>
     /// Health is clamped beteen 0 and MaxHealth
     /// </summary>
@@ -77,53 +90,6 @@ public class SharedStatCounter : ScriptableObject {
         }
     }
 
-    /// <summary>
-    /// Adds one coin to the counter
-    /// </summary>
-    /// <returns></returns>
-    public int AddOneCoin()
-    {
-        _coinsCollected++;
-        return _coinsCollected;
-    }
-
-    /// <summary>
-    /// Used to add or lose coins. Coin counter can't go lower than 0 coins.
-    /// </summary>
-    /// <param name="num"></param>
-    /// <returns> The ammount of coins currently collected </returns>
-    public int AddCoins(int num)
-    {
-        _coinsCollected += num;
-        if (_coinsCollected < 0)
-            _coinsCollected = 0;
-        return _coinsCollected;
-    }
-
-    /// <summary>
-    /// Adds one energy. Energy is clamped between 0 and MaxEnergy.
-    /// </summary>
-    /// <returns> The energy percentage from 0 to 1. (1 being MaxEnergy being collected) </returns>
-    public float AddOneEnergy()
-    {
-        _energyCollected ++;
-        _energyCollected = Mathf.Clamp(_energyCollected, 0, MaxEnergy);
-
-        return (float)_energyCollected / MaxEnergy;
-    }
-
-    /// <summary>
-    /// Used to add or remove energy. Energy can go no more than MAX_ENERGY
-    /// and no less than 0. 
-    /// </summary>
-    /// <returns> The percentage of the current energy collected from 0 to 1. (1 being MaxEnergy collected)</returns>
-    public float AddEnergy(int energry)
-    {
-        _energyCollected += energry;
-        _energyCollected = Mathf.Clamp(_energyCollected ,0, MaxEnergy);  
-
-        return (float)_energyCollected / MaxEnergy;
-    }
 
     /// <summary>
     /// Get the percentage of the energy from 0 to 1 with 1 being MaxEnergy being collected and 0
