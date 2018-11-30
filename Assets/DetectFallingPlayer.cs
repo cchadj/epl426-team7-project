@@ -11,7 +11,7 @@ public class DetectFallingPlayer : MonoBehaviour {
         if (sc != null)
         {
             onPlayerDeathEvent.Raise();
-            sc.Respawn();
+            //sc.Respawn();
         }
             
     }

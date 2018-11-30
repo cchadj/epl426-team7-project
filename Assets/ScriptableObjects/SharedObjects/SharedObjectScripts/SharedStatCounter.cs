@@ -4,6 +4,9 @@
 public class SharedStatCounter : ScriptableObject {
 
     [SerializeField]
+    private GameEvent onHealthChangedEvent;
+
+    [SerializeField]
     private int _coinsCollected;
     public int CoinsCollected
     {
@@ -57,8 +60,10 @@ public class SharedStatCounter : ScriptableObject {
         }
 
         set
-        { 
-            _health = Mathf.Clamp(value, 0, _maxHealth);
+        {
+            _health = value;
+            _health = Mathf.Clamp(_health, 0, _maxHealth);
+            onHealthChangedEvent.Raise();
         }
     }
 

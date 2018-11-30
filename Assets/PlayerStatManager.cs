@@ -26,6 +26,21 @@ public class PlayerStatManager : MonoBehaviour {
     public void AddHealth(int ammnt)
     {
         statCounter.Health += ammnt;
+        if(statCounter.Health == 0)
+        {
+            Debug.Log("I DIE");
+            onDeathEvent.Raise();
+        }
+    }
+
+    public void FullHealth()
+    {
+        statCounter.Health = statCounter.MaxHealth;
+    }
+
+    public void SetHealthAt(int val)
+    {
+        statCounter.Health = val;
     }
 	
 }

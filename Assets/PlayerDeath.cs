@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerDeath : MonoBehaviour {
-    public GameEvent onPlayerRespawnEvent;
 
     public GameObject effect;
     public GameObject playerParentFixed;
@@ -19,9 +18,9 @@ public class PlayerDeath : MonoBehaviour {
 
     private Vector3 positionToRespawn = new Vector3(0f, 15f, 0f);
     private float _tPositionToRespawn = 0.01f;
+
     public void Respawn()
     {
-        onPlayerRespawnEvent.Raise();
         Debug.Log("Respawing player");
 
         // Reposition player

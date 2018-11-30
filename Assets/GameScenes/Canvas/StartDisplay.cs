@@ -35,7 +35,8 @@ public class StartDisplay : MonoBehaviour
 
     public void Start()
     {
-        canvasPlay.SetActive(true);
+        if(canvasPlay)
+            canvasPlay.SetActive(true);
         health = GameObject.Find("/CanvasPlay/Health");
         score = GameObject.Find("/CanvasPlay/Score");
         power = GameObject.Find("/CanvasPlay/Power");
@@ -44,7 +45,8 @@ public class StartDisplay : MonoBehaviour
         barP = GameObject.Find("/CanvasPlay/PowerBar");
         barHM = GameObject.Find("/CanvasPlay/HealthBarMinus");
         barPM = GameObject.Find("/CanvasPlay/PowerBarMinus");
-        canvasPlay.SetActive(false);
+        if(canvasPlay)
+            canvasPlay.SetActive(false);
 
     }
 

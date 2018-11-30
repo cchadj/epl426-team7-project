@@ -12,9 +12,11 @@ public class DamagePlayer : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        PlayerInteractor playerInteractor = GetComponent<PlayerInteractor>();
+        Debug.Log("Hubert hits someone " + other.ToString());
+        PlayerInteractor playerInteractor = other.GetComponent<PlayerInteractor>();
         if(playerInteractor != null)
         {
+            Debug.Log("Hubert interacts with player");
             //TODO send the right time 
             playerInteractor.Interract(enemyType, 0f);
             onPlayerDamageEvent.Raise();
