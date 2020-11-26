@@ -37,6 +37,106 @@ ModelImporter:
     100062: Upper_Leg_R
     100064: rig
     100066: WGT-root
+    100068: Fingers01.L
+    100070: Fingers01.R
+    100072: Fingers02.L
+    100074: Fingers02.L_end
+    100076: Fingers02.R
+    100078: Fingers02.R_end
+    100080: Foot Roll.L
+    100082: Foot Roll.R
+    100084: Foot.L
+    100086: Foot.R
+    100088: Hand.L
+    100090: Hand.R
+    100092: Head_end
+    100094: Leg Control.L
+    100096: Leg Control.R
+    100098: Leg ik.L
+    100100: Leg ik.L_end
+    100102: Leg ik.R
+    100104: Leg ik.R_end
+    100106: Leg pole target.L
+    100108: Leg pole target.L_end
+    100110: Leg pole target.R
+    100112: Leg pole target.R_end
+    100114: Lower Arm.L
+    100116: Lower Arm.R
+    100118: Lower Leg.L
+    100120: Lower Leg.L_end
+    100122: Lower Leg.R
+    100124: Lower Leg.R_end
+    100126: ORG-Chest
+    100128: ORG-Fingers01.L
+    100130: ORG-Fingers01.R
+    100132: ORG-Fingers02.L
+    100134: ORG-Fingers02.L_end
+    100136: ORG-Fingers02.R
+    100138: ORG-Fingers02.R_end
+    100140: ORG-Foot Roll.L
+    100142: ORG-Foot Roll.R
+    100144: ORG-Foot.L
+    100146: ORG-Foot.R
+    100148: ORG-Hand.L
+    100150: ORG-Hand.R
+    100152: ORG-Head
+    100154: ORG-Head_end
+    100156: ORG-Leg Control.L
+    100158: ORG-Leg Control.R
+    100160: ORG-Leg ik.L
+    100162: ORG-Leg ik.L_end
+    100164: ORG-Leg ik.R
+    100166: ORG-Leg ik.R_end
+    100168: ORG-Leg pole target.L
+    100170: ORG-Leg pole target.L_end
+    100172: ORG-Leg pole target.R
+    100174: ORG-Leg pole target.R_end
+    100176: ORG-Lower Arm.L
+    100178: ORG-Lower Arm.R
+    100180: ORG-Lower Leg.L
+    100182: ORG-Lower Leg.L_end
+    100184: ORG-Lower Leg.R
+    100186: ORG-Lower Leg.R_end
+    100188: ORG-Neck
+    100190: ORG-Root
+    100192: ORG-Thumb01.L
+    100194: ORG-Thumb01.R
+    100196: ORG-Thumb02.L
+    100198: ORG-Thumb02.L_end
+    100200: ORG-Thumb02.R
+    100202: ORG-Thumb02.R_end
+    100204: ORG-Toes Control.L
+    100206: ORG-Toes Control.L_end
+    100208: ORG-Toes Control.R
+    100210: ORG-Toes Control.R_end
+    100212: ORG-Toes.L
+    100214: ORG-Toes.L_end
+    100216: ORG-Toes.R
+    100218: ORG-Toes.R_end
+    100220: ORG-Torso
+    100222: ORG-Upper Arm.L
+    100224: ORG-Upper Arm.R
+    100226: ORG-Upper Leg.L
+    100228: ORG-Upper Leg.R
+    100230: root
+    100232: Thumb01.L
+    100234: Thumb01.R
+    100236: Thumb02.L
+    100238: Thumb02.L_end
+    100240: Thumb02.R
+    100242: Thumb02.R_end
+    100244: Toes Control.L
+    100246: Toes Control.L_end
+    100248: Toes Control.R
+    100250: Toes Control.R_end
+    100252: Toes.L
+    100254: Toes.L_end
+    100256: Toes.R
+    100258: Toes.R_end
+    100260: Upper Arm.L
+    100262: Upper Arm.R
+    100264: Upper Leg.L
+    100266: Upper Leg.R
     400000: Armature
     400002: Character
     400004: Chest
@@ -71,6 +171,106 @@ ModelImporter:
     400062: Upper_Leg_R
     400064: rig
     400066: WGT-root
+    400068: Fingers01.L
+    400070: Fingers01.R
+    400072: Fingers02.L
+    400074: Fingers02.L_end
+    400076: Fingers02.R
+    400078: Fingers02.R_end
+    400080: Foot Roll.L
+    400082: Foot Roll.R
+    400084: Foot.L
+    400086: Foot.R
+    400088: Hand.L
+    400090: Hand.R
+    400092: Head_end
+    400094: Leg Control.L
+    400096: Leg Control.R
+    400098: Leg ik.L
+    400100: Leg ik.L_end
+    400102: Leg ik.R
+    400104: Leg ik.R_end
+    400106: Leg pole target.L
+    400108: Leg pole target.L_end
+    400110: Leg pole target.R
+    400112: Leg pole target.R_end
+    400114: Lower Arm.L
+    400116: Lower Arm.R
+    400118: Lower Leg.L
+    400120: Lower Leg.L_end
+    400122: Lower Leg.R
+    400124: Lower Leg.R_end
+    400126: ORG-Chest
+    400128: ORG-Fingers01.L
+    400130: ORG-Fingers01.R
+    400132: ORG-Fingers02.L
+    400134: ORG-Fingers02.L_end
+    400136: ORG-Fingers02.R
+    400138: ORG-Fingers02.R_end
+    400140: ORG-Foot Roll.L
+    400142: ORG-Foot Roll.R
+    400144: ORG-Foot.L
+    400146: ORG-Foot.R
+    400148: ORG-Hand.L
+    400150: ORG-Hand.R
+    400152: ORG-Head
+    400154: ORG-Head_end
+    400156: ORG-Leg Control.L
+    400158: ORG-Leg Control.R
+    400160: ORG-Leg ik.L
+    400162: ORG-Leg ik.L_end
+    400164: ORG-Leg ik.R
+    400166: ORG-Leg ik.R_end
+    400168: ORG-Leg pole target.L
+    400170: ORG-Leg pole target.L_end
+    400172: ORG-Leg pole target.R
+    400174: ORG-Leg pole target.R_end
+    400176: ORG-Lower Arm.L
+    400178: ORG-Lower Arm.R
+    400180: ORG-Lower Leg.L
+    400182: ORG-Lower Leg.L_end
+    400184: ORG-Lower Leg.R
+    400186: ORG-Lower Leg.R_end
+    400188: ORG-Neck
+    400190: ORG-Root
+    400192: ORG-Thumb01.L
+    400194: ORG-Thumb01.R
+    400196: ORG-Thumb02.L
+    400198: ORG-Thumb02.L_end
+    400200: ORG-Thumb02.R
+    400202: ORG-Thumb02.R_end
+    400204: ORG-Toes Control.L
+    400206: ORG-Toes Control.L_end
+    400208: ORG-Toes Control.R
+    400210: ORG-Toes Control.R_end
+    400212: ORG-Toes.L
+    400214: ORG-Toes.L_end
+    400216: ORG-Toes.R
+    400218: ORG-Toes.R_end
+    400220: ORG-Torso
+    400222: ORG-Upper Arm.L
+    400224: ORG-Upper Arm.R
+    400226: ORG-Upper Leg.L
+    400228: ORG-Upper Leg.R
+    400230: root
+    400232: Thumb01.L
+    400234: Thumb01.R
+    400236: Thumb02.L
+    400238: Thumb02.L_end
+    400240: Thumb02.R
+    400242: Thumb02.R_end
+    400244: Toes Control.L
+    400246: Toes Control.L_end
+    400248: Toes Control.R
+    400250: Toes Control.R_end
+    400252: Toes.L
+    400254: Toes.L_end
+    400256: Toes.R
+    400258: Toes.R_end
+    400260: Upper Arm.L
+    400262: Upper Arm.R
+    400264: Upper Leg.L
+    400266: Upper Leg.R
     2300000: WGT-root
     3300000: WGT-root
     4300000: Character
@@ -91,13 +291,18 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Hair
+    second: {fileID: 2100000, guid: 81d51820e3e38254b9f87f565791f426, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Hair__Character_Texture_psd
     second: {fileID: 2100000, guid: 1864b690c5e217b42b5bd6fc2ea474a2, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Hoodie
-    second: {fileID: 2100000, guid: 4feb11ab05953c24f8cd27372ae2ba08, type: 2}
+    second: {fileID: 2100000, guid: c6bef16091ed04040b1eeaaca7fa59e7, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -106,13 +311,28 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: InnerShirt
+    second: {fileID: 2100000, guid: ef08f52a91f29814d912f4082f5748d9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: InnerShirt__Character_Texture_psd
     second: {fileID: 2100000, guid: 354725ed3b671df4d95f422e17812762, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: f5c248f9b04710c4c99afaaddb19e6da, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Material__Character_Texture_psd
     second: {fileID: 2100000, guid: cdbc16cc530fd464584dc715173ea9bd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skin
+    second: {fileID: 2100000, guid: 5fb140a992132b647af15837dba56e26, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -535,6 +755,7 @@ ModelImporter:
     globalScale: 1
     meshCompression: 0
     addColliders: 0
+    useSRGBMaterialColor: 1
     importVisibility: 0
     importBlendShapes: 1
     importCameras: 0
@@ -559,6 +780,9 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 4
     normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
   importAnimation: 1
   copyAvatar: 0
   humanDescription:
