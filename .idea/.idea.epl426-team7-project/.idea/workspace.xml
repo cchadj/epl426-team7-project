@@ -2,36 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e355e43-c0b0-42c9-826f-4f831366d674" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Canvas/Gold_30.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Canvas/Gold_30.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Canvas/blood_bar 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Canvas/blood_bar 1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Canvas/button_play (1).png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Canvas/button_play (1).png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Canvas/button_play.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Canvas/button_play.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Canvas/kisspng-pixel-art-clip-art-start-button-5b20e17a594910.4859994115288815303657.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Canvas/kisspng-pixel-art-clip-art-start-button-5b20e17a594910.4859994115288815303657.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Canvas/logo 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Canvas/logo 1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Canvas/logo.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Canvas/logo.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Canvas/logo2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Canvas/logo2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Canvas/rock_bar 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Canvas/rock_bar 1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Canvas/snow_bar 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Canvas/snow_bar 1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Extra Assets/PostProcessing/Editor/PropertyDrawers/MinDrawer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Extra Assets/PostProcessing/Editor/PropertyDrawers/MinDrawer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Extra Assets/Prefabs/OtherPrefabs/Flag With Cloth Physics/Unity Package.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LowPoly/LowPolyNature/Img/Border.psd.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LowPoly/LowPolyNature/Img/Border.psd.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LowPoly/LowPolyNature/Img/Slot.psd.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LowPoly/LowPolyNature/Img/Slot.psd.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LowPoly/LowPolyNature/Img/White.psd.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LowPoly/LowPolyNature/Img/White.psd.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LowPoly/LowPolyNature/Img/axe.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LowPoly/LowPolyNature/Img/axe.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LowPoly/LowPolyNature/Img/chicken_leg.psd.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LowPoly/LowPolyNature/Img/chicken_leg.psd.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LowPoly/LowPolyNature/Img/first_aid.psd.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LowPoly/LowPolyNature/Img/first_aid.psd.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LowPoly/LowPolyNature/Img/gem_red.psd.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LowPoly/LowPolyNature/Img/gem_red.psd.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LowPoly/LowPolyNaturePackLite/Grass_Textures/Flower_tulip_red.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LowPoly/LowPolyNaturePackLite/Grass_Textures/Flower_tulip_red.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LowPoly/LowPolyNaturePackLite/Grass_Textures/grass_1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LowPoly/LowPolyNaturePackLite/Grass_Textures/grass_1.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LowPoly/LowPolyNaturePackLite/Grass_Textures/grass_2_autumn_2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LowPoly/LowPolyNaturePackLite/Grass_Textures/grass_2_autumn_2.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mecanim-Character/Models/Blends/mage.blend.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mecanim-Character/Models/Blends/mage.blend.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Blends/mage.blend.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Blends/mage.blend.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Other Prefabs/OtherPrefabs/Flag With Cloth Physics.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Other Prefabs/TreePrefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/OtherPrefabs/Flag With Cloth Physics.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TreePrefabs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/CoinCollectable.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/CoinCollectable.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/EnergyCollectable.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/EnergyCollectable.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameScenes/DemoScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameScenes/DemoScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LowPoly/LowPolyWater_Pack/Plane Meshes/Ocean50x50W750H750.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LowPoly/LowPolyWater_Pack/Plane Meshes/Ocean50x50W750H750.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mecanim-Character/PlayerAnimator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mecanim-Character/PlayerAnimator.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mecanim-Character/Scripts/ControlPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mecanim-Character/Scripts/ControlPlayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Mecanim-Character/Scripts/PlayerAnimationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mecanim-Character/Scripts/PlayerAnimationController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Blends/Materials/Character__Character_Texture_psd.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Blends/Materials/Character__Character_Texture_psd.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Blends/Materials/Hoodie__Character_Texture_psd.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Blends/Materials/Hoodie__Character_Texture_psd.mat" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,13 +20,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Extra Assets/PostProcessing/Editor/PropertyDrawers/MinDrawer.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
+            <state relative-caret-position="48">
               <caret line="5" selection-start-line="5" selection-end-line="5" />
               <folding>
-                <marker date="1606391024039" expanded="true" signature="6:114" ph="..." />
+                <marker date="1606391024039" expanded="false" signature="6:114" ph="..." />
                 <marker date="1606391024039" expanded="true" signature="152:1089" ph="{...}" />
                 <marker date="1606391024039" expanded="true" signature="247:1087" ph="{...}" />
                 <marker date="1606391024039" expanded="true" signature="350:1081" ph="{...}" />
@@ -59,18 +38,66 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Mecanim-Character/Scripts/PlayerAnimationController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="656">
+              <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
+              <folding>
+                <marker date="1606396815104" expanded="false" signature="6:78" ph="..." />
+                <marker date="1606396815104" expanded="true" signature="80:305" ph="/* Copyright (C) Xenfinity LLC - All Rights Reserved ... */" />
+                <marker date="1606396815104" expanded="true" signature="361:1565" ph="{...}" />
+                <marker date="1606396815104" expanded="true" signature="368:681" ph="Attributes" />
+                <marker date="1606396815104" expanded="true" signature="687:1058" ph="Animate Functions" />
+                <marker date="1606396815104" expanded="true" signature="743:793" ph="{...}" />
+                <marker date="1606396815104" expanded="true" signature="825:876" ph="{...}" />
+                <marker date="1606396815104" expanded="true" signature="909:961" ph="{...}" />
+                <marker date="1606396815104" expanded="true" signature="992:1042" ph="{...}" />
+                <marker date="1606396815104" expanded="true" signature="1064:1563" ph="Helpers" />
+                <marker date="1606396815104" expanded="true" signature="1122:1228" ph="{...}" />
+                <marker date="1606396815104" expanded="true" signature="1306:1547" ph="{...}" />
+                <marker date="1606396815104" expanded="true" signature="1391:1541" ph="{...}" />
+                <marker date="1606396815104" expanded="true" signature="1446:1531" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Mecanim-Character/Scripts/ControlPlayer.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="432">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
+              <folding>
+                <marker date="1606398409309" expanded="false" signature="6:78" ph="..." />
+                <marker date="1606398409309" expanded="true" signature="123:1322" ph="{...}" />
+                <marker date="1606398409309" expanded="true" signature="205:212" ph="{...}" />
+                <marker date="1606398409309" expanded="true" signature="231:1320" ph="{...}" />
+                <marker date="1606398409309" expanded="true" signature="412:616" ph="{...}" />
+                <marker date="1606398409309" expanded="true" signature="639:843" ph="{...}" />
+                <marker date="1606398409309" expanded="true" signature="869:1073" ph="{...}" />
+                <marker date="1606398409309" expanded="true" signature="1094:1299" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Mecanim-Character/Scripts/PlayerAnimationController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Mecanim-Character/Scripts/ControlPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Extra Assets/PostProcessing/Editor/PropertyDrawers/MinDrawer.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Extra Assets/PostProcessing/Editor/PropertyDrawers/MinDrawer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Mecanim-Character/Scripts/PlayerAnimationController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Mecanim-Character/Scripts/ControlPlayer.cs" />
       </list>
     </option>
   </component>
@@ -148,12 +175,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606390912869</updated>
-      <workItem from="1606390916939" duration="534000" />
+      <workItem from="1606390916939" duration="3054000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="534000" />
+    <option name="totallyTimeSpent" value="3054000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -175,6 +202,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="NuGet" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unity" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Unit Tests" />
       <window_info anchor="bottom" id="Terminal" />
@@ -215,16 +243,56 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Assets/Extra Assets/PostProcessing/Editor/PropertyDrawers/MinDrawer.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
+        <state relative-caret-position="48">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
           <folding>
-            <marker date="1606391024039" expanded="true" signature="6:114" ph="..." />
+            <marker date="1606391024039" expanded="false" signature="6:114" ph="..." />
             <marker date="1606391024039" expanded="true" signature="152:1089" ph="{...}" />
             <marker date="1606391024039" expanded="true" signature="247:1087" ph="{...}" />
             <marker date="1606391024039" expanded="true" signature="350:1081" ph="{...}" />
             <marker date="1606391024039" expanded="true" signature="501:679" ph="{...}" />
             <marker date="1606391024039" expanded="true" signature="755:936" ph="{...}" />
             <marker date="1606391024039" expanded="true" signature="953:1071" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Mecanim-Character/Scripts/PlayerAnimationController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
+          <folding>
+            <marker date="1606396815104" expanded="false" signature="6:78" ph="..." />
+            <marker date="1606396815104" expanded="true" signature="80:305" ph="/* Copyright (C) Xenfinity LLC - All Rights Reserved ... */" />
+            <marker date="1606396815104" expanded="true" signature="361:1565" ph="{...}" />
+            <marker date="1606396815104" expanded="true" signature="368:681" ph="Attributes" />
+            <marker date="1606396815104" expanded="true" signature="687:1058" ph="Animate Functions" />
+            <marker date="1606396815104" expanded="true" signature="743:793" ph="{...}" />
+            <marker date="1606396815104" expanded="true" signature="825:876" ph="{...}" />
+            <marker date="1606396815104" expanded="true" signature="909:961" ph="{...}" />
+            <marker date="1606396815104" expanded="true" signature="992:1042" ph="{...}" />
+            <marker date="1606396815104" expanded="true" signature="1064:1563" ph="Helpers" />
+            <marker date="1606396815104" expanded="true" signature="1122:1228" ph="{...}" />
+            <marker date="1606396815104" expanded="true" signature="1306:1547" ph="{...}" />
+            <marker date="1606396815104" expanded="true" signature="1391:1541" ph="{...}" />
+            <marker date="1606396815104" expanded="true" signature="1446:1531" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Mecanim-Character/Scripts/ControlPlayer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <marker date="1606398409309" expanded="false" signature="6:78" ph="..." />
+            <marker date="1606398409309" expanded="true" signature="123:1322" ph="{...}" />
+            <marker date="1606398409309" expanded="true" signature="205:212" ph="{...}" />
+            <marker date="1606398409309" expanded="true" signature="231:1320" ph="{...}" />
+            <marker date="1606398409309" expanded="true" signature="412:616" ph="{...}" />
+            <marker date="1606398409309" expanded="true" signature="639:843" ph="{...}" />
+            <marker date="1606398409309" expanded="true" signature="869:1073" ph="{...}" />
+            <marker date="1606398409309" expanded="true" signature="1094:1299" ph="{...}" />
           </folding>
         </state>
       </provider>

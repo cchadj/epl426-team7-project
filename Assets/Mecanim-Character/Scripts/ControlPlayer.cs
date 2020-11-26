@@ -19,7 +19,6 @@ public class ControlPlayer : MonoBehaviour {
 
         if (_move)
         {
-    
             _animator.SetBool("idle", false);
             _animator.SetBool("move", true);
             _animator.SetBool("die", false);
@@ -27,7 +26,6 @@ public class ControlPlayer : MonoBehaviour {
         }
         else if (_die)
         {
-  
             _animator.SetBool("idle", false);
             _animator.SetBool("move", false);
             _animator.SetBool("die", true);
@@ -35,7 +33,6 @@ public class ControlPlayer : MonoBehaviour {
         }
         else if (_attack)
         {
-     
             _animator.SetBool("idle", false);
             _animator.SetBool("move", false);
             _animator.SetBool("die", false);

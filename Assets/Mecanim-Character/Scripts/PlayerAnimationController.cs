@@ -12,21 +12,13 @@ public class PlayerAnimationController : MonoBehaviour
 {
     #region Attributes
 
-    private Animator animator;
+    
+    [SerializeField] private Animator animator;
 
     private const string IDLE_ANIMATION_BOOL = "idle";
     private const string DEATH_ANIMATION_BOOL = "die";
     private const string ATTACK_ANIMATION_BOOL = "attack";
     private const string MOVE_ANIMATION_BOOL = "move";
-
-    #endregion
-
-    #region Monobehaviour API
-
-    private void Start()
-    {
-        animator = GetComponent<Animator>();
-    }
 
     #endregion
 
