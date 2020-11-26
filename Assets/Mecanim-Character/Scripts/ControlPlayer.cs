@@ -5,11 +5,14 @@ using UnityEngine;
 public class ControlPlayer : MonoBehaviour {
 
 
-    public Animator _animator;
-	// Use this for initialization
-	void Start () {
-		
-	}
+    [SerializeField]private Animator _animator;
+
+    private PlayerAnimationController _animationControler;
+
+    private void Awake()
+    {
+        _animationControler = GetComponent<PlayerAnimationController>();
+    }
 
     void Update()
     {
@@ -19,10 +22,11 @@ public class ControlPlayer : MonoBehaviour {
 
         if (_move)
         {
-            _animator.SetBool("idle", false);
-            _animator.SetBool("move", true);
-            _animator.SetBool("die", false);
-            _animator.SetBool("attack", false);
+//            _animator.SetBool("idle", false);
+//            _animator.SetBool("move", true);
+//            _animator.SetBool("die", false);
+//            _animator.SetBool("attack", false);
+            _animationControler.AnimateMove();
         }
         else if (_die)
         {
@@ -41,10 +45,11 @@ public class ControlPlayer : MonoBehaviour {
         else // IDLE
         {
 
-            _animator.SetBool("idle", true);
-            _animator.SetBool("move", false);
-            _animator.SetBool("die", false);
-            _animator.SetBool("attack", false);
+            _animationControler.AnimateIdle();
+//            _animator.SetBool("idle", true);
+//            _animator.SetBool("move", false);
+//            _animator.SetBool("die", false);
+//            _animator.SetBool("attack", false);
         }
         // ...
     }

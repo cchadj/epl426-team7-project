@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e355e43-c0b0-42c9-826f-4f831366d674" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/CoinCollectable.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/CoinCollectable.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/EnergyCollectable.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/EnergyCollectable.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GameScenes/DemoScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameScenes/DemoScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/LowPoly/LowPolyWater_Pack/Plane Meshes/Ocean50x50W750H750.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LowPoly/LowPolyWater_Pack/Plane Meshes/Ocean50x50W750H750.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mecanim-Character/PlayerAnimator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mecanim-Character/PlayerAnimator.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Mecanim-Character/Scripts/ControlPlayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mecanim-Character/Scripts/ControlPlayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Mecanim-Character/Scripts/PlayerAnimationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Mecanim-Character/Scripts/PlayerAnimationController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Blends/Materials/Character__Character_Texture_psd.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Blends/Materials/Character__Character_Texture_psd.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Blends/Materials/Hoodie__Character_Texture_psd.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Blends/Materials/Hoodie__Character_Texture_psd.mat" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,17 +58,19 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Mecanim-Character/Scripts/ControlPlayer.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="67">
+              <caret line="13" column="71" selection-start-line="13" selection-start-column="71" selection-end-line="13" selection-end-column="71" />
               <folding>
-                <marker date="1606398409309" expanded="false" signature="6:78" ph="..." />
-                <marker date="1606398409309" expanded="true" signature="123:1322" ph="{...}" />
-                <marker date="1606398409309" expanded="true" signature="205:212" ph="{...}" />
-                <marker date="1606398409309" expanded="true" signature="231:1320" ph="{...}" />
-                <marker date="1606398409309" expanded="true" signature="412:616" ph="{...}" />
-                <marker date="1606398409309" expanded="true" signature="639:843" ph="{...}" />
-                <marker date="1606398409309" expanded="true" signature="869:1073" ph="{...}" />
-                <marker date="1606398409309" expanded="true" signature="1094:1299" ph="{...}" />
+                <marker date="1606398927870" expanded="false" signature="6:78" ph="..." />
+                <marker date="1606398927870" expanded="true" signature="123:1565" ph="{...}" />
+                <marker date="1606398927870" expanded="true" signature="260:345" ph="{...}" />
+                <marker date="1606398927870" expanded="true" signature="364:1563" ph="{...}" />
+                <marker date="1606398927870" expanded="true" signature="545:804" ph="{...}" />
+                <marker date="1606398927870" expanded="true" signature="556:747" ph="/* _animator.SetBool(&quot;idle&quot;, false); ... */" />
+                <marker date="1606398927870" expanded="true" signature="827:1031" ph="{...}" />
+                <marker date="1606398927870" expanded="true" signature="1057:1261" ph="{...}" />
+                <marker date="1606398927870" expanded="true" signature="1282:1542" ph="{...}" />
+                <marker date="1606398927870" expanded="true" signature="1341:1532" ph="/* _animator.SetBool(&quot;idle&quot;, true); ... */" />
               </folding>
             </state>
           </provider>
@@ -175,12 +169,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1606390912869</updated>
-      <workItem from="1606390916939" duration="3054000" />
+      <workItem from="1606390916939" duration="3687000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3054000" />
+    <option name="totallyTimeSpent" value="3687000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -282,17 +276,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Mecanim-Character/Scripts/ControlPlayer.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="67">
+          <caret line="13" column="71" selection-start-line="13" selection-start-column="71" selection-end-line="13" selection-end-column="71" />
           <folding>
-            <marker date="1606398409309" expanded="false" signature="6:78" ph="..." />
-            <marker date="1606398409309" expanded="true" signature="123:1322" ph="{...}" />
-            <marker date="1606398409309" expanded="true" signature="205:212" ph="{...}" />
-            <marker date="1606398409309" expanded="true" signature="231:1320" ph="{...}" />
-            <marker date="1606398409309" expanded="true" signature="412:616" ph="{...}" />
-            <marker date="1606398409309" expanded="true" signature="639:843" ph="{...}" />
-            <marker date="1606398409309" expanded="true" signature="869:1073" ph="{...}" />
-            <marker date="1606398409309" expanded="true" signature="1094:1299" ph="{...}" />
+            <marker date="1606398927870" expanded="false" signature="6:78" ph="..." />
+            <marker date="1606398927870" expanded="true" signature="123:1565" ph="{...}" />
+            <marker date="1606398927870" expanded="true" signature="260:345" ph="{...}" />
+            <marker date="1606398927870" expanded="true" signature="364:1563" ph="{...}" />
+            <marker date="1606398927870" expanded="true" signature="545:804" ph="{...}" />
+            <marker date="1606398927870" expanded="true" signature="556:747" ph="/* _animator.SetBool(&quot;idle&quot;, false); ... */" />
+            <marker date="1606398927870" expanded="true" signature="827:1031" ph="{...}" />
+            <marker date="1606398927870" expanded="true" signature="1057:1261" ph="{...}" />
+            <marker date="1606398927870" expanded="true" signature="1282:1542" ph="{...}" />
+            <marker date="1606398927870" expanded="true" signature="1341:1532" ph="/* _animator.SetBool(&quot;idle&quot;, true); ... */" />
           </folding>
         </state>
       </provider>
