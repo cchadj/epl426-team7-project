@@ -6,7 +6,9 @@ public class SplinePathFollower : MonoBehaviour
 {
     private Transform _transform;
     private float _horizontalInput = 0f;
+    [SerializeField] private GameObject _gameManager;
 
+    private bool _introEnded = false;
     private float _speed = 0f;
     [SerializeField]
     private float _t = 0f;
@@ -16,6 +18,7 @@ public class SplinePathFollower : MonoBehaviour
     }
 
 
+    private StartDisplay _introScript;
     public List<Spline> splines;
     private ITwoWayEnumerator<Spline> _splineEnumerator;
     private Spline _activeSpline;
@@ -35,10 +38,16 @@ public class SplinePathFollower : MonoBehaviour
         _childCharacterController = childTransform.gameObject.GetComponent<CharacterController>();
         //childCollisionController = childTransform.gameObject.GetComponent<CollisionController>();
         _transform.position = _activeSpline.GetLocationAlongSplineAtDistance(_t) + Vector3.up * _transform.lossyScale.y;
+        _introScript = _gameManager.GetComponent<StartDisplay>();
+
+        _introScript.IntroFinished += () => _introEnded = true;
     }
 
     void GetInput()
     {
+        if (!_introEnded)
+            _horizontalInput = 0;
+        
         _horizontalInput = Input.GetAxis("Horizontal");
     }
 

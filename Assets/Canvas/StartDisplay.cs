@@ -89,6 +89,7 @@ public class StartDisplay : MonoBehaviour
         barHM.GetComponent<Image>().CrossFadeAlpha(1, 4f, false);
         camera.GetComponent<CameraSplinePathFollower>().enabled= true;
         
+        print("HELLLOO");
         IntroFinished?.Invoke();
     }
 
