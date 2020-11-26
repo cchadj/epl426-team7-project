@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -28,6 +29,8 @@ public class StartDisplay : MonoBehaviour
     public Vector2 posbarP = new Vector2();
     public Vector2 sizeBar = new Vector2();
 
+    public Action IntroFinished;
+    
     public bool start= false;
     private float barDisplay;
 
@@ -85,6 +88,8 @@ public class StartDisplay : MonoBehaviour
         barPM.GetComponent<Image>().CrossFadeAlpha(1, 4f, false);
         barHM.GetComponent<Image>().CrossFadeAlpha(1, 4f, false);
         camera.GetComponent<CameraSplinePathFollower>().enabled= true;
+        
+        IntroFinished?.Invoke();
     }
 
 
