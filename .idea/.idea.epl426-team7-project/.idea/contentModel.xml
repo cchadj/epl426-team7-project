@@ -208,7 +208,6 @@
                 <e p="LineInspector.cs" t="Include" />
               </e>
               <e p="Line.cs" t="Include" />
-              <e p="LineInspector.cs" t="Include" />
               <e p="SplinePathFollower.cs" t="Include" />
               <e p="SplineWalker.cs" t="Include" />
               <e p="SplineWalkerMode.cs" t="Include" />
@@ -381,15 +380,8 @@
               </e>
               <e p="Editor" t="Include">
                 <e p="SplineEditor.cs" t="Include" />
-                <e p="SplineExtrusionEditor.cs" t="Include" />
-              </e>
-              <e p="Exemple" t="Include">
-                <e p="ExempleFollowSpline.cs" t="Include" />
-                <e p="ExemplePipe.cs" t="Include" />
-                <e p="ExempleRailling.cs" t="Include" />
-                <e p="ExempleSower.cs" t="Include" />
-                <e p="ExempleTentacle.cs" t="Include" />
                 <e p="SplineExtrusion.cs" t="Include" />
+                <e p="SplineExtrusionEditor.cs" t="Include" />
               </e>
             </e>
           </e>

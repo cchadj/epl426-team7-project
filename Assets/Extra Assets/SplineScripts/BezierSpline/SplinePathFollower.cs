@@ -40,15 +40,24 @@ public class SplinePathFollower : MonoBehaviour
         _transform.position = _activeSpline.GetLocationAlongSplineAtDistance(_t) + Vector3.up * _transform.lossyScale.y;
         _introScript = _gameManager.GetComponent<StartDisplay>();
 
-        _introScript.IntroFinished += () => _introEnded = true;
+        _introScript.IntroFinished += () =>
+        {
+            _introEnded = true;
+        };
     }
 
     void GetInput()
     {
         if (!_introEnded)
+        {
+            Debug.Log("Intro still playing");
             _horizontalInput = 0;
-        
-        _horizontalInput = Input.GetAxis("Horizontal");
+            
+        }
+        else
+        {
+            _horizontalInput = Input.GetAxis("Horizontal");
+        }
     }
 
     // Update is called once per frame

@@ -2,7 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e355e43-c0b0-42c9-826f-4f831366d674" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.epl426-team7-project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.epl426-team7-project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Extra Assets/SplineScripts/BezierSpline/LineInspector.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Extra Assets/SplineScripts/BezierSpline/LineInspector.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Extra Assets/SplineScripts/BezierSpline/SplinePathFollower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Extra Assets/SplineScripts/BezierSpline/SplinePathFollower.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GameScenes/DemoScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GameScenes/DemoScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LowPoly/LowPolyWater_Pack/Plane Meshes/Ocean50x50W750H750.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/LowPoly/LowPolyWater_Pack/Plane Meshes/Ocean50x50W750H750.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SplineMesh/Scripts/Exemple.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SplineMesh/Scripts/Exemple/ExempleFollowSpline.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SplineMesh/Scripts/Exemple/ExempleFollowSpline.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SplineMesh/Scripts/Exemple/ExemplePipe.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SplineMesh/Scripts/Exemple/ExemplePipe.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SplineMesh/Scripts/Exemple/ExempleRailling.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SplineMesh/Scripts/Exemple/ExempleRailling.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SplineMesh/Scripts/Exemple/ExempleSower.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SplineMesh/Scripts/Exemple/ExempleSower.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SplineMesh/Scripts/Exemple/ExempleTentacle.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SplineMesh/Scripts/Exemple/ExempleTentacle.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SplineMesh/Scripts/Exemple/SplineExtrusion.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SplineMesh/Scripts/Exemple/SplineExtrusion.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,149 +32,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Extra Assets/PostProcessing/Editor/PropertyDrawers/MinDrawer.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-              <folding>
-                <marker date="1606391024039" expanded="false" signature="6:114" ph="..." />
-                <marker date="1606391024039" expanded="true" signature="152:1089" ph="{...}" />
-                <marker date="1606391024039" expanded="true" signature="247:1087" ph="{...}" />
-                <marker date="1606391024039" expanded="true" signature="350:1081" ph="{...}" />
-                <marker date="1606391024039" expanded="true" signature="501:679" ph="{...}" />
-                <marker date="1606391024039" expanded="true" signature="755:936" ph="{...}" />
-                <marker date="1606391024039" expanded="true" signature="953:1071" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Mecanim-Character/Scripts/PlayerAnimationController.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
-              <folding>
-                <marker date="1606396815104" expanded="false" signature="6:78" ph="..." />
-                <marker date="1606396815104" expanded="true" signature="80:305" ph="/* Copyright (C) Xenfinity LLC - All Rights Reserved ... */" />
-                <marker date="1606396815104" expanded="true" signature="361:1565" ph="{...}" />
-                <marker date="1606396815104" expanded="false" signature="368:681" ph="Attributes" />
-                <marker date="1606396815104" expanded="true" signature="687:1058" ph="Animate Functions" />
-                <marker date="1606396815104" expanded="true" signature="743:793" ph="{...}" />
-                <marker date="1606396815104" expanded="true" signature="825:876" ph="{...}" />
-                <marker date="1606396815104" expanded="true" signature="909:961" ph="{...}" />
-                <marker date="1606396815104" expanded="true" signature="992:1042" ph="{...}" />
-                <marker date="1606396815104" expanded="false" signature="1064:1563" ph="Helpers" />
-                <marker date="1606396815104" expanded="true" signature="1122:1228" ph="{...}" />
-                <marker date="1606396815104" expanded="true" signature="1306:1547" ph="{...}" />
-                <marker date="1606396815104" expanded="true" signature="1391:1541" ph="{...}" />
-                <marker date="1606396815104" expanded="true" signature="1446:1531" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Mecanim-Character/Scripts/ControlPlayer.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="13" column="71" selection-start-line="13" selection-start-column="71" selection-end-line="13" selection-end-column="71" />
-              <folding>
-                <marker date="1606398927870" expanded="false" signature="6:78" ph="..." />
-                <marker date="1606398927870" expanded="true" signature="123:1565" ph="{...}" />
-                <marker date="1606398927870" expanded="true" signature="260:345" ph="{...}" />
-                <marker date="1606398927870" expanded="true" signature="364:1563" ph="{...}" />
-                <marker date="1606398927870" expanded="true" signature="545:804" ph="{...}" />
-                <marker date="1606398927870" expanded="true" signature="556:747" ph="/* _animator.SetBool(&quot;idle&quot;, false); ... */" />
-                <marker date="1606398927870" expanded="true" signature="827:1031" ph="{...}" />
-                <marker date="1606398927870" expanded="true" signature="1057:1261" ph="{...}" />
-                <marker date="1606398927870" expanded="true" signature="1282:1542" ph="{...}" />
-                <marker date="1606398927870" expanded="true" signature="1341:1532" ph="/* _animator.SetBool(&quot;idle&quot;, true); ... */" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterControlScripts/JumpCharacterController.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <marker date="1606387427214" expanded="false" signature="6:78" ph="..." />
-                <marker date="1606387427214" expanded="true" signature="181:1168" ph="{...}" />
-                <marker date="1606387427214" expanded="true" signature="382:510" ph="{...}" />
-                <marker date="1606387427214" expanded="true" signature="596:1166" ph="{...}" />
-                <marker date="1606387427214" expanded="true" signature="648:696" ph="{...}" />
-                <marker date="1606387427214" expanded="true" signature="768:855" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Extra Assets/SplineScripts/BezierSpline/SplinePathFollower.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="42" column="67" selection-start-line="42" selection-start-column="67" selection-end-line="42" selection-end-column="67" />
-              <folding>
-                <marker date="1606401868486" expanded="false" signature="6:78" ph="..." />
-                <marker date="1606401868486" expanded="true" signature="127:3465" ph="{...}" />
-                <marker date="1606401868486" expanded="true" signature="410:441" ph="{...}" />
-                <marker date="1606401868486" expanded="true" signature="840:1507" ph="{...}" />
-                <marker date="1606401868486" expanded="true" signature="1528:1665" ph="{...}" />
-                <marker date="1606401868486" expanded="true" signature="1731:3463" ph="{...}" />
-                <marker date="1606401868486" expanded="true" signature="1879:1951" ph="{...}" />
-                <marker date="1606401868486" expanded="true" signature="1991:2062" ph="{...}" />
-                <marker date="1606401868486" expanded="true" signature="2191:2439" ph="{...}" />
-                <marker date="1606401868486" expanded="true" signature="2298:2391" ph="{...}" />
-                <marker date="1606401868486" expanded="true" signature="3033:3211" ph="{...}" />
-                <marker date="1606401868486" expanded="true" signature="3089:3201" ph="{...}" />
-                <marker date="1606401868486" expanded="true" signature="3257:3457" ph="{...}" />
-                <marker date="1606401868486" expanded="true" signature="3317:3447" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Canvas/StartDisplay.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
-              <folding>
-                <marker date="1606400196117" expanded="false" signature="6:114" ph="..." />
-                <marker date="1606400196117" expanded="true" signature="157:2985" ph="{...}" />
-                <marker date="1606400196117" expanded="true" signature="1007:1073" ph="{...}" />
-                <marker date="1606400196117" expanded="true" signature="1099:1457" ph="{...}" />
-                <marker date="1606400196117" expanded="true" signature="1494:2944" ph="{...}" />
-                <marker date="1606400196117" expanded="true" signature="2965:2983" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/LowPoly/Flag With Cloth Physics/Script/Movement.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-              <folding>
-                <marker date="1606387425313" expanded="true" signature="6:78" ph="..." />
-                <marker date="1606387425313" expanded="true" signature="118:631" ph="{...}" />
-                <marker date="1606387425313" expanded="true" signature="196:244" ph="{...}" />
-                <marker date="1606387425313" expanded="true" signature="267:629" ph="{...}" />
-                <marker date="1606387425313" expanded="true" signature="300:357" ph="{...}" />
-                <marker date="1606387425313" expanded="true" signature="389:447" ph="{...}" />
-                <marker date="1606387425313" expanded="true" signature="479:537" ph="{...}" />
-                <marker date="1606387425313" expanded="true" signature="569:626" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -173,8 +52,8 @@
         <option value="$PROJECT_DIR$/Assets/Extra Assets/PostProcessing/Editor/PropertyDrawers/MinDrawer.cs" />
         <option value="$PROJECT_DIR$/Assets/Mecanim-Character/Scripts/PlayerAnimationController.cs" />
         <option value="$PROJECT_DIR$/Assets/Mecanim-Character/Scripts/ControlPlayer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Canvas/StartDisplay.cs" />
         <option value="$PROJECT_DIR$/Assets/LowPoly/Flag With Cloth Physics/Script/Movement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Canvas/StartDisplay.cs" />
         <option value="$PROJECT_DIR$/Assets/Extra Assets/SplineScripts/BezierSpline/SplinePathFollower.cs" />
       </list>
     </option>
@@ -190,6 +69,11 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="AssemblyExplorer" />
+      <pane id="FileSystemExplorer" />
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -197,17 +81,16 @@
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
             </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Packages" type="4e2708dd:PackagesRoot" />
+            </path>
           </expand>
           <select />
         </subPane>
         <option name="show-hidden-items" value="false" />
         <option name="show-project-names" value="true" />
       </pane>
-      <pane id="AssemblyExplorer" />
-      <pane id="SolutionExplorer">
-        <option name="show-all-files" value="false" />
-      </pane>
-      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -256,12 +139,13 @@
       <workItem from="1606390916939" duration="4715000" />
       <workItem from="1606400529163" duration="2000" />
       <workItem from="1606400748495" duration="11000" />
-      <workItem from="1606400911610" duration="957000" />
+      <workItem from="1606400911610" duration="1507000" />
+      <workItem from="1606402550258" duration="1317000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5685000" />
+    <option name="totallyTimeSpent" value="7552000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -274,9 +158,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1549" height="846" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2642522" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26827633" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -380,6 +263,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Extra Assets/SplineScripts/BezierSpline/SplinePathFollower.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+          <folding>
+            <marker date="1606402736346" expanded="false" signature="6:78" ph="..." />
+            <marker date="1606402736346" expanded="true" signature="127:3600" ph="{...}" />
+            <marker date="1606402736346" expanded="true" signature="410:441" ph="{...}" />
+            <marker date="1606402736346" expanded="true" signature="840:1535" ph="{...}" />
+            <marker date="1606402736346" expanded="true" signature="1476:1528" ph="{...}" />
+            <marker date="1606402736346" expanded="true" signature="1556:1800" ph="{...}" />
+            <marker date="1606402736346" expanded="true" signature="1588:1701" ph="{...}" />
+            <marker date="1606402736346" expanded="true" signature="1714:1794" ph="{...}" />
+            <marker date="1606402736346" expanded="true" signature="1866:3598" ph="{...}" />
+            <marker date="1606402736346" expanded="true" signature="2014:2086" ph="{...}" />
+            <marker date="1606402736346" expanded="true" signature="2126:2197" ph="{...}" />
+            <marker date="1606402736346" expanded="true" signature="2326:2574" ph="{...}" />
+            <marker date="1606402736346" expanded="true" signature="2433:2526" ph="{...}" />
+            <marker date="1606402736346" expanded="true" signature="3168:3346" ph="{...}" />
+            <marker date="1606402736346" expanded="true" signature="3224:3336" ph="{...}" />
+            <marker date="1606402736346" expanded="true" signature="3392:3592" ph="{...}" />
+            <marker date="1606402736346" expanded="true" signature="3452:3582" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharacterControlScripts/JumpCharacterController.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -394,12 +303,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Canvas/StartDisplay.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+          <folding>
+            <marker date="1606402179621" expanded="false" signature="6:114" ph="..." />
+            <marker date="1606402179621" expanded="true" signature="157:3011" ph="{...}" />
+            <marker date="1606402179621" expanded="true" signature="1007:1073" ph="{...}" />
+            <marker date="1606402179621" expanded="true" signature="1099:1457" ph="{...}" />
+            <marker date="1606402179621" expanded="true" signature="1494:2970" ph="{...}" />
+            <marker date="1606402179621" expanded="true" signature="2991:3009" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/LowPoly/Flag With Cloth Physics/Script/Movement.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
+        <state relative-caret-position="80">
           <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
           <folding>
-            <marker date="1606387425313" expanded="true" signature="6:78" ph="..." />
+            <marker date="1606387425313" expanded="false" signature="6:78" ph="..." />
             <marker date="1606387425313" expanded="true" signature="118:631" ph="{...}" />
             <marker date="1606387425313" expanded="true" signature="196:244" ph="{...}" />
             <marker date="1606387425313" expanded="true" signature="267:629" ph="{...}" />
@@ -411,41 +335,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Canvas/StartDisplay.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Extra Assets/SplineScripts/BezierSpline/LineInspector.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="31" column="22" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
-          <folding>
-            <marker date="1606400196117" expanded="false" signature="6:114" ph="..." />
-            <marker date="1606400196117" expanded="true" signature="157:2985" ph="{...}" />
-            <marker date="1606400196117" expanded="true" signature="1007:1073" ph="{...}" />
-            <marker date="1606400196117" expanded="true" signature="1099:1457" ph="{...}" />
-            <marker date="1606400196117" expanded="true" signature="1494:2944" ph="{...}" />
-            <marker date="1606400196117" expanded="true" signature="2965:2983" ph="{...}" />
-          </folding>
+        <state relative-caret-position="48">
+          <caret line="4" column="17" lean-forward="true" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Extra Assets/SplineScripts/BezierSpline/SplinePathFollower.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/SplineMesh/Scripts/Exemple/ExempleFollowSpline.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="42" column="67" selection-start-line="42" selection-start-column="67" selection-end-line="42" selection-end-column="67" />
-          <folding>
-            <marker date="1606401868486" expanded="false" signature="6:78" ph="..." />
-            <marker date="1606401868486" expanded="true" signature="127:3465" ph="{...}" />
-            <marker date="1606401868486" expanded="true" signature="410:441" ph="{...}" />
-            <marker date="1606401868486" expanded="true" signature="840:1507" ph="{...}" />
-            <marker date="1606401868486" expanded="true" signature="1528:1665" ph="{...}" />
-            <marker date="1606401868486" expanded="true" signature="1731:3463" ph="{...}" />
-            <marker date="1606401868486" expanded="true" signature="1879:1951" ph="{...}" />
-            <marker date="1606401868486" expanded="true" signature="1991:2062" ph="{...}" />
-            <marker date="1606401868486" expanded="true" signature="2191:2439" ph="{...}" />
-            <marker date="1606401868486" expanded="true" signature="2298:2391" ph="{...}" />
-            <marker date="1606401868486" expanded="true" signature="3033:3211" ph="{...}" />
-            <marker date="1606401868486" expanded="true" signature="3089:3201" ph="{...}" />
-            <marker date="1606401868486" expanded="true" signature="3257:3457" ph="{...}" />
-            <marker date="1606401868486" expanded="true" signature="3317:3447" ph="{...}" />
-          </folding>
+        <state relative-caret-position="176">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
         </state>
       </provider>
     </entry>
